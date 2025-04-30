@@ -7,7 +7,7 @@ function Home() {
             <div className='app-content' style={{ gap: "30px", display: "flex", flexDirection: "column", height: "100%" }}>
                 <div className='navbar'>
                     <img
-                        style={{ border: '1px solid #fff', borderRadius: '8px' }}
+                        style={{ border: '1px solid #fff', borderRadius: "5px" }}
                         src='/navbar-icon.png'
                         alt='Navbar Icon'
                     />
@@ -44,9 +44,9 @@ function Home() {
                         <img src="/pfp-img.jpg" alt="" />
 
                         <div className='info-text'>
-                            <p>Hi, I am <span>Manav</span></p>
+                            <p>Hi, I am <span>Manav</span>. <a className="leet-code" target="_blank" href="https://en.wikipedia.org/wiki/Human">{'${wk}'}</a></p>
                             <p>Full Stack Developer</p>
-                            <p>DSA && Leetcode <a className='leet-code' href="">{'${lt}'}</a></p>
+                            <p>DSA && Leetcode <a className='leet-code' target="_blank" href="https://leetcode.com/u/Manav437/">{'${lt}'}</a></p>
                         </div>
                     </div>
                 </div>
