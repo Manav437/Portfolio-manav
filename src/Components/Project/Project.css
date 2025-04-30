@@ -1,0 +1,85 @@
+body {
+    margin: 0;
+    font-family: "JetBrains Mono", monospace;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    color: white;
+    background: linear-gradient(-45deg, #0f0f0f, #1a1a1a, #2c2c54, #3b3b98);
+    background-size: 400% 400%;
+    animation: gradientMotion 20s ease infinite;
+}
+
+.project-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    /* min-height: 100vh; */
+    background: linear-gradient(-45deg, #0f0f0f, #1a1a1a, #2c2c54, #3b3b98);
+    background-size: 400% 400%;
+    animation: gradientMotion 20s ease infinite;
+}
+
+@keyframes gradientMotion {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+}
+
+.project-content {
+    width: 50%;
+}
+
+.project-info h3:hover {
+    background-color: #A0C878;
+    cursor: crosshair;
+}
+
+.project-card {
+    border: 1px solid white;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.card-head {
+    color: #A0C878;
+    margin-top: 5px;
+}
+
+.project-card span {
+    background-color: #67AE6E;
+    color: #18230F;
+    margin-right: 7px;
+    border: 1px solid #A0C878;
+    border-radius: 5px;
+    padding: 3px 2px;
+    font-size: .9rem;
+}
+
+.project-card span:hover {
+    cursor: cell;
+}
+
+.project-card p {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.project-card img {
+    height: 25px;
+    border-radius: 10px;
+}
+
+.project-card img:hover {
+    cursor: pointer;
+}

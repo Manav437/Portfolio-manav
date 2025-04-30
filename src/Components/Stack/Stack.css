@@ -1,0 +1,47 @@
+body {
+    margin: 0;
+    font-family: "JetBrains Mono", monospace;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    color: white;
+}
+.stack-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    background: linear-gradient(-45deg, #0f0f0f, #1a1a1a, #2c2c54, #3b3b98);
+    background-size: 400% 400%;
+    animation: gradientMotion 20s ease infinite;
+}
+
+.stack-content {
+    width: 50%;
+}
+
+.stack-head {
+    padding: 7px 5px;
+}
+
+.stack-head:hover {
+    cursor: crosshair;
+    background: #A0C878;
+}
+
+.stack-info p {
+    margin-top: 0;
+}
+
+.stack-info h4 {
+    color: #A0C878;
+    width: fit-content;
+    padding: 5px 2px;
+}
+
+.stack-info h4:hover {
+    background: #A0C878;
+    color: white;
+}
