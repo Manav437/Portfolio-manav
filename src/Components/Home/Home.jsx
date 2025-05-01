@@ -1,4 +1,4 @@
-import { NavLink } from "react-router-dom";
+import { NavLink, Link } from "react-router-dom";
 import "./Home.css"
 
 function Home() {
@@ -6,11 +6,12 @@ function Home() {
         <div className='app-container'>
             <div className='app-content' style={{ gap: "30px", display: "flex", flexDirection: "column", height: "100%" }}>
                 <div className='navbar'>
-                    <img
+                    <Link style={{ display: "flex", alignItems: "center" }} to="/"><img
                         style={{ border: '1px solid #fff', borderRadius: "5px" }}
                         src='/navbar-icon.png'
                         alt='Navbar Icon'
-                    />
+                    /></Link>
+
                     <NavLink
                         to='/'
                         className={({ isActive }) =>
@@ -61,26 +62,17 @@ function Home() {
                     </ul>
                 </div>
 
-                {/* <div className='terminal-commands'>
-					<h3 style={{ borderBottom: "1px solid white" }}>~ terminal cmds</h3>
-					<ul>
-						<li><code>whoami</code> → manav@terminal</li>
-						<li><code>ls skills</code> → React, Node, MongoDB, etc.</li>
-						<li><code>cd projects</code> → list opens below</li>
-					</ul>
-				</div> */}
-
                 <div className='socials'>
                     <h3 style={{ borderBottom: "1px solid white" }}>~ social_links</h3>
 
                     <div className='socials-content'>
-                        <a target='_blank' href="https://github.com/Manav437">github</a>
-                        <a target='_blank' href="https://x.com/Manav437">twitter</a>
-                        <a target='_blank' href="https://www.linkedin.com/in/manav-gusain/">linkedin</a>
+                        <a target='_blank' href="https://github.com/Manav437">Github</a>
+                        <a target='_blank' href="https://x.com/Manav437">Twitter</a>
+                        <a target='_blank' href="https://www.linkedin.com/in/manav-gusain/">LinkedIn</a>
                     </div>
                 </div>
 
-                <p style={{ color: "black", background: "#A0C878", padding: "5px 2px", margin: "0 auto", display: "inline-block", width: "25%", textAlign: "center" }}>@terminal by <span className='footer-span' style={{ textDecoration: "underline", textUnderlineOffset: "3px" }}>manav</span></p>
+                <p className="last-p" style={{ color: "black", background: "#A0C878", padding: "5px 2px", margin: "0 auto", display: "inline-block", textAlign: "center" }}>@terminal by <span className='footer-span' style={{ textDecoration: "underline", textUnderlineOffset: "3px" }}>manav</span></p>
             </div>
         </div>
     )

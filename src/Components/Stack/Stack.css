@@ -13,9 +13,9 @@ body {
     align-items: center;
     width: 100vw;
     height: 100vh;
-    background: linear-gradient(-45deg, #0f0f0f, #1a1a1a, #2c2c54, #3b3b98);
+    /* background: linear-gradient(-45deg, #0f0f0f, #1a1a1a, #2c2c54, #3b3b98);
     background-size: 400% 400%;
-    animation: gradientMotion 20s ease infinite;
+    animation: gradientMotion 20s ease infinite; */
 }
 
 .stack-content {
@@ -44,4 +44,36 @@ body {
 .stack-info h4:hover {
     background: #A0C878;
     color: white;
+}
+
+.stack-list > div {
+    gap: 10px;
+}
+
+.stack-list > div > p {
+    background: white;
+    color: black;
+    padding: 5px;
+    width: 30%;
+    border: 1px solid white;
+    border-radius: 5px;
+}
+
+@media (max-width :790px) {
+    .stack-content {
+        width:90%
+    }
+
+    .nav-link {
+        width:fit-content;
+        font-size: 13px;
+    }
+
+    .stack-list > div {
+        gap: 6px;
+    }
+
+    .stack-list > div > p {
+        width: 29%;
+    }
 }

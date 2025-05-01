@@ -14,16 +14,16 @@ body {
     align-items: center;
     width: 100vw;
     height: 100vh;
-    background: linear-gradient(-45deg, #0f0f0f, #1a1a1a, #2c2c54, #3b3b98);
+    /* background: linear-gradient(-45deg, #0f0f0f, #1a1a1a, #2c2c54, #3b3b98);
     background-size: 400% 400%;
-    animation: gradientMotion 20s ease infinite;
+    animation: gradientMotion 20s ease infinite; */
 }
 
 .app-content {
     width: 50%;
 }
 
-@keyframes gradientMotion {
+/* @keyframes gradientMotion {
     0% {
       background-position: 0% 50%;
     }
@@ -33,7 +33,7 @@ body {
     100% {
       background-position: 0% 50%;
     }
-  }
+  } */
 
 .app-container h3 {
     padding: 7px 5px;
@@ -68,6 +68,10 @@ body {
     width: 30px;
     height: 30px;
     margin-right: 30px;
+}
+
+.info{
+    width: 100%;
 }
 
 .info-content {
@@ -143,7 +147,21 @@ ul.custom li::before {
     gap: 20px;
 }
 
+/* .socials-content img {
+    width: 15px;
+    height: 15px;
+    padding: 5px;
+    background: #A0C878;
+}
+
+.socials-content img:hover {
+    background: white;;
+} */
+
 .socials-content a {
+    display: flex;
+    align-items: center;
+    gap: 5px;
     text-decoration: none;
     color: #A0C878;
     padding: 5px 3px;
@@ -165,8 +183,30 @@ ul.custom li::before {
     color: white;
 }
 
+.last-p {
+    width: 25%;
+}
+
 @media (max-width :790px) {
     .app-content {
-        width:80%
+        min-width: 90%;
     }
+    
+    .navbar {
+        width: 100%;
+    }
+
+    .nav-link {
+        width:fit-content;
+        font-size: 13px;
+    }
+
+    .last-p {
+        width: 55%;
+    }
+
+    h3 {
+        font-size: 20px;
+    }
+
 }

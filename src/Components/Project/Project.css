@@ -4,10 +4,10 @@ body {
     font-optical-sizing: auto;
     font-weight: 400;
     font-style: normal;
-    color: white;
+    /* color: white;
     background: linear-gradient(-45deg, #0f0f0f, #1a1a1a, #2c2c54, #3b3b98);
     background-size: 400% 400%;
-    animation: gradientMotion 20s ease infinite;
+    animation: gradientMotion 20s ease infinite; */
 }
 
 .project-container {
@@ -17,12 +17,12 @@ body {
     align-items: center;
     width: 100vw;
     /* min-height: 100vh; */
-    background: linear-gradient(-45deg, #0f0f0f, #1a1a1a, #2c2c54, #3b3b98);
+    /* background: linear-gradient(-45deg, #0f0f0f, #1a1a1a, #2c2c54, #3b3b98);
     background-size: 400% 400%;
-    animation: gradientMotion 20s ease infinite;
+    animation: gradientMotion 20s ease infinite; */
 }
 
-@keyframes gradientMotion {
+/* @keyframes gradientMotion {
     0% {
       background-position: 0% 50%;
     }
@@ -32,7 +32,7 @@ body {
     100% {
       background-position: 0% 50%;
     }
-}
+} */
 
 .project-content {
     width: 50%;
@@ -47,11 +47,12 @@ body {
     border: 1px solid white;
     border-radius: 10px;
     padding: 10px;
+    padding-bottom: 15px;
 }
 
 .card-head {
     color: #A0C878;
-    margin-top: 5px;
+    margin-top: 0px;
     margin-bottom: 0px;
 }
 
@@ -85,4 +86,20 @@ body {
 
 .project-card img:hover {
     cursor: pointer;
+}
+
+@media (max-width :790px) {
+    .project-content {
+        width:90%
+    }
+
+    .nav-link {
+        width:fit-content;
+        font-size: 13px;
+    }
+
+    .project-text {
+        font-size: 13px;
+        margin-top: 4px;
+    }
 }
