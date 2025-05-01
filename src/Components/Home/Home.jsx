@@ -42,7 +42,10 @@ function Home() {
                     <h3 style={{ borderBottom: "1px solid white" }}>~ info</h3>
 
                     <div className='info-content'>
-                        <img src="/pfp-img.jpg" alt="" />
+                        <div className="img-container" style={{ position: "relative", display: "flex", flexDirection: "column" }}>
+                            <img src="/pfp-img.jpg" alt="" />
+                            <p style={{ width: "30px", paddingLeft: "10px", color: "black", position: "absolute", textAlign: "center", fontSize: "8px" }}>{'{hover over da img}'}</p>
+                        </div>
 
                         <div className='info-text'>
                             <p>Hi, I am <span>Manav</span>. <a className="leet-code" target="_blank" href="https://en.wikipedia.org/wiki/Human">{'${wk}'}</a></p>

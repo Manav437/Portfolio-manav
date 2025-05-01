@@ -51,11 +51,12 @@ body {
 }
 
 .stack-list > div > p {
-    background: white;
-    color: black;
+    background: #2C2C2C;
+    color: white;
     padding: 5px;
     width: 30%;
-    border: 1px solid white;
+    border: 2px inset #cbd3c3;
+    border: 2px outset #a3c185;
     border-radius: 5px;
 }
 
