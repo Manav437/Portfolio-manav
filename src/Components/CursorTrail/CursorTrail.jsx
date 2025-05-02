@@ -7,29 +7,30 @@ const CursorTrail = () => {
     const circlesRef = useRef([]);
 
     const colors = [
-        "#FF6B6B",
-        "#FFD93D",
-        "#6BCB77",
-        "#4D96FF",
-        "#843B62",
-        "#FFADAD",
-        "#9D4EDD",
-        "#00F5D4",
-        "#F15BB5",
-        "#00BBF9",
-        "#FEE440",
-        "#B8F2E6",
-        "#D0F4DE",
-        "#FFDAC1",
-        "#E4C1F9",
-        "#A9DEF9",
-        "#FCF6BD",
-        "#C492B1",
-        "#A1C298",
-        "#8E7DBE",
-        "#F67280",
-        "#355C7D"
+        "#8E9AAF",
+        "#CBC0D3",
+        "#EFD3D7",
+        "#DEE2FF",
+        "#B8C1EC",
+        "#9DA9A0",
+        "#C9ADA7",
+        "#E6B89C",
+        "#F6BD60",
+        "#F7EDE2",
+        "#84A59D",
+        "#F28482",
+        "#D9BF77",
+        "#E0AFA0",
+        "#A3A380",
+        "#B2B09B",
+        "#CCD5AE",
+        "#D4A373",
+        "#A98467",
+        "#6C584C",
+        "#A68A64",
+        "#8C6A5D"
     ];
+
 
 
     useEffect(() => {

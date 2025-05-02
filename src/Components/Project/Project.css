@@ -81,8 +81,8 @@ body {
 .project-card img {
     height: 25px;
     border-radius: 50%;
-    padding-left: 1px;
-    border-left: 1px solid white;
+    /* padding-left: 1px; */
+    border: 1px solid #A0C878;
 }
 
 .project-card img:hover {

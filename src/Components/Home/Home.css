@@ -80,6 +80,7 @@ body {
 }
 
 .info-content img {
+
     filter: grayscale(100%);
     padding: 2px;
     height: 150px;
@@ -116,7 +117,7 @@ body {
 .info-text span:hover {
     background: #A0C878;
     color: white;
-    cursor: wait;
+    /* cursor: wait; */
 }
 
 .leet-code {

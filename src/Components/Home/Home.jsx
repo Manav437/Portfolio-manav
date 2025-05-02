@@ -44,7 +44,7 @@ function Home() {
                     <div className='info-content'>
                         <div className="img-container" style={{ position: "relative", display: "flex", flexDirection: "column" }}>
                             <img src="/pfp-img.jpg" alt="" />
-                            <p style={{ width: "30px", paddingLeft: "10px", color: "black", position: "absolute", textAlign: "center", fontSize: "8px" }}>{'{hover over da img}'}</p>
+                            <p style={{ color: "#2c2c2C", width: "30px", paddingLeft: "10px", position: "absolute", textAlign: "center", fontSize: "8px" }}>{'{hover}'}</p>
                         </div>
 
                         <div className='info-text'>

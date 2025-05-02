@@ -60,6 +60,14 @@ body {
     border-radius: 5px;
 }
 
+.resume-div {
+    background-color: #1f1f1f;
+}
+
+.resume-div:hover {
+    background-color: #2C2C2C;
+}
+
 @media (max-width :790px) {
     .stack-content {
         width:90%
@@ -75,6 +83,6 @@ body {
     }
 
     .stack-list > div > p {
-        width: 29%;
+        width: 28%;
     }
 }

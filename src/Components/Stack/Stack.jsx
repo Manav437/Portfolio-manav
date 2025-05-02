@@ -43,7 +43,7 @@ function Stack() {
 
                     <div className="stack-list">
                         <h4>~ frontend</h4>
-                        <div style={{ display: "flex" }}>
+                        <div style={{ marginTop: "0", display: "flex" }}>
                             <p>React</p>
                             <p>Tailwind</p>
                             <p>Next.js</p>
@@ -52,7 +52,7 @@ function Stack() {
 
                     <div className="stack-list">
                         <h4>~ backend</h4>
-                        <div style={{ display: "flex", flexDirection: "row", flexWrap: "wrap" }}>
+                        <div style={{ marginTop: "0", display: "flex", flexDirection: "row", flexWrap: "wrap" }}>
                             <p >Node.js</p>
                             <p>Express</p>
                             <p>MongoDB</p>
@@ -63,22 +63,22 @@ function Stack() {
 
                     <div className="stack-list">
                         <h4>~ tools</h4>
-                        <div style={{ display: "flex", flexWrap: "wrap" }}>
+                        <div style={{ marginTop: "0", display: "flex", flexWrap: "wrap" }}>
                             <p>Git</p>
                             <p>Github</p>
                             <p>Render</p>
+                            <p>Firebase</p>
                         </div>
                     </div>
 
                 </div>
 
-                <div style={{
-                    margin: "50px auto 0",
+                <div className="resume-div" style={{
+                    margin: "0px auto",
                     display: "flex",
                     alignItems: "center",
                     justifyContent: "center",
                     gap: "8px",
-                    backgroundColor: "#1f1f1f",
                     padding: "10px 16px",
                     borderRadius: "8px",
                     width: "fit-content",
