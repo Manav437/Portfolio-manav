@@ -93,7 +93,7 @@ body {
 .info-text span:hover {
     background: #A0C878;
     color: white;
-    cursor: wait;
+    /* cursor: wait; */
 }
 
 .leet-code {
@@ -155,7 +155,7 @@ ul.custom li::before {
 
 .footer-span:hover {
     background-color: #2C2C2C;
-    cursor: wait;
+    /* cursor: wait; */
     color: white;
 }
 

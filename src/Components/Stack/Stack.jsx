@@ -1,9 +1,18 @@
+import { useEffect } from "react";
 import { NavLink, Link } from "react-router-dom";
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 import "./Stack.css"
 
 function Stack() {
+
+    useEffect(() => {
+        AOS.init({ duration: 1000 }); // Optional: customize options
+    }, []);
+
+
     return (
-        <div className="stack-container">
+        <div className="stack-container" data-aos="fade-up">
             <div className="stack-content" style={{ gap: "30px", display: "flex", flexDirection: "column", height: "100%" }}>
                 <div className='navbar'>
                     <Link style={{ display: "flex", alignItems: "center" }} to="/"><img

@@ -1,10 +1,18 @@
+import { useEffect } from "react";
 import { NavLink, Link } from "react-router-dom";
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 import "./Home.css"
 
 function Home() {
+
+    useEffect(() => {
+        AOS.init({ duration: 1000 }); // Optional: customize options
+    }, []);
+
     return (
         <div className='app-container'>
-            <div className='app-content' style={{ gap: "30px", display: "flex", flexDirection: "column", height: "100%" }}>
+            <div className='app-content' style={{ gap: "30px", display: "flex", flexDirection: "column", height: "100%" }} data-aos="zoom-out">
                 <div className='navbar'>
                     <Link style={{ display: "flex", alignItems: "center" }} to="/"><img
                         style={{ border: '1px solid #fff', borderRadius: "5px" }}
@@ -38,13 +46,13 @@ function Home() {
                     </NavLink>
                 </div>
 
-                <div className='info'>
+                <div className='info' >
                     <h3 style={{ borderBottom: "1px solid white" }}>~ info</h3>
 
                     <div className='info-content'>
-                        <div className="img-container" style={{ position: "relative", display: "flex", flexDirection: "column" }}>
-                            <img src="/pfp-img.jpg" alt="" />
-                            <p style={{ color: "#2c2c2C", width: "30px", paddingLeft: "10px", position: "absolute", textAlign: "center", fontSize: "8px" }}>{'{hover}'}</p>
+                        <div className="img-container" style={{ position: "relative", display: "flex", flexDirection: "column" }} data-aos="fade-right">
+                            <img src="https://i.pinimg.com/736x/29/59/3a/29593a639cad7e56e907a44734881541.jpg" alt="" />
+                            <p style={{ color: "white", width: "30px", paddingLeft: "10px", position: "absolute", textAlign: "center", fontSize: "10px" }}>{'{hover}'}</p>
                         </div>
 
                         <div className='info-text'>
