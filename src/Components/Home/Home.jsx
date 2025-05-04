@@ -12,7 +12,7 @@ function Home() {
 
     return (
         <div className='app-container'>
-            <div className='app-content' style={{ gap: "30px", display: "flex", flexDirection: "column", height: "100%" }} data-aos="zoom-out">
+            <div className='app-content' style={{ gap: "30px", display: "flex", flexDirection: "column", height: "100%" }} >
                 <div className='navbar'>
                     <Link style={{ display: "flex", alignItems: "center" }} to="/"><img
                         style={{ border: '1px solid #fff', borderRadius: "5px" }}
@@ -46,13 +46,13 @@ function Home() {
                     </NavLink>
                 </div>
 
-                <div className='info' >
+                <div className='info' data-aos="zoom-out" >
                     <h3 style={{ borderBottom: "1px solid white" }}>~ info</h3>
 
                     <div className='info-content'>
                         <div className="img-container" style={{ position: "relative", display: "flex", flexDirection: "column" }} data-aos="fade-right">
-                            <img src="https://i.pinimg.com/736x/29/59/3a/29593a639cad7e56e907a44734881541.jpg" alt="" />
-                            <p style={{ color: "white", width: "30px", paddingLeft: "10px", position: "absolute", textAlign: "center", fontSize: "10px" }}>{'{hover}'}</p>
+                            <img src="/portfolio-img.jpeg" alt="" />
+                            <p style={{ color: "white", width: "30px", paddingLeft: "10px", position: "absolute", textAlign: "center", fontSize: "8px" }}>hover</p>
                         </div>
 
                         <div className='info-text'>
@@ -63,7 +63,7 @@ function Home() {
                     </div>
                 </div>
 
-                <div className='about'>
+                <div className='about' data-aos="zoom-out">
                     <h3 style={{ borderBottom: "1px solid white" }}>~ about</h3>
 
                     <ul className='custom' style={{ lineHeight: "1.5rem" }}>
@@ -73,7 +73,7 @@ function Home() {
                     </ul>
                 </div>
 
-                <div className='socials'>
+                <div className='socials' data-aos="zoom-out">
                     <h3 style={{ borderBottom: "1px solid white" }}>~ social_links</h3>
 
                     <div className='socials-content'>
@@ -83,9 +83,9 @@ function Home() {
                     </div>
                 </div>
 
-                <p className="last-p" style={{ color: "black", background: "#A0C878", padding: "5px 2px", margin: "0 auto", display: "inline-block", textAlign: "center" }}>@terminal by <span className='footer-span' style={{ textDecoration: "underline", textUnderlineOffset: "3px" }}>manav</span></p>
+                <p data-aos="zoom-out" className="last-p" style={{ color: "black", background: "#A0C878", padding: "5px 2px", margin: "0 auto", display: "inline-block", textAlign: "center" }}>@terminal by <span className='footer-span' style={{ textDecoration: "underline", textUnderlineOffset: "3px" }}>manav</span></p>
             </div>
-        </div>
+        </div >
     )
 }
 

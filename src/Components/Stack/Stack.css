@@ -6,6 +6,7 @@ body {
     font-style: normal;
     color: white;
 }
+
 .stack-container {
     display: flex;
     flex-direction: column;

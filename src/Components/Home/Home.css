@@ -14,26 +14,11 @@ body {
     align-items: center;
     width: 100vw;
     height: 100vh;
-    /* background: linear-gradient(-45deg, #0f0f0f, #1a1a1a, #2c2c54, #3b3b98);
-    background-size: 400% 400%;
-    animation: gradientMotion 20s ease infinite; */
 }
 
 .app-content {
     width: 50%;
 }
-
-/* @keyframes gradientMotion {
-    0% {
-      background-position: 0% 50%;
-    }
-    50% {
-      background-position: 100% 50%;
-    }
-    100% {
-      background-position: 0% 50%;
-    }
-  } */
 
 .app-container h3 {
     padding: 7px 5px;
@@ -80,8 +65,8 @@ body {
 }
 
 .info-content img {
-
     filter: grayscale(100%);
+    transition: .4s ease-in-out;
     padding: 2px;
     height: 150px;
     width: 150px;
@@ -202,7 +187,7 @@ ul.custom li::before {
 
 @media (max-width :790px) {
     .app-content {
-        min-width: 90%;
+        width: 90%;
     }
     
     .navbar {
@@ -221,5 +206,4 @@ ul.custom li::before {
     h3 {
         font-size: 20px;
     }
-
 }

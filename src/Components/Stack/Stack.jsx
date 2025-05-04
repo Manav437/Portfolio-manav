@@ -12,7 +12,7 @@ function Stack() {
 
 
     return (
-        <div className="stack-container" data-aos="fade-up">
+        <div className="stack-container" >
             <div className="stack-content" style={{ gap: "30px", display: "flex", flexDirection: "column", height: "100%" }}>
                 <div className='navbar'>
                     <Link style={{ display: "flex", alignItems: "center" }} to="/"><img
@@ -47,10 +47,10 @@ function Stack() {
                     </NavLink>
                 </div>
 
-                <div className="stack-info">
+                <div className="stack-info" >
                     <h3 className="stack-head" style={{ borderBottom: "1px solid white" }}>tech_stack</h3>
 
-                    <div className="stack-list">
+                    <div className="stack-list" data-aos="fade-up">
                         <h4>~ frontend</h4>
                         <div style={{ marginTop: "0", display: "flex" }}>
                             <p>React</p>
@@ -59,7 +59,7 @@ function Stack() {
                         </div>
                     </div>
 
-                    <div className="stack-list">
+                    <div className="stack-list" data-aos="fade-up">
                         <h4>~ backend</h4>
                         <div style={{ marginTop: "0", display: "flex", flexDirection: "row", flexWrap: "wrap" }}>
                             <p >Node.js</p>
@@ -70,7 +70,7 @@ function Stack() {
                         </div>
                     </div>
 
-                    <div className="stack-list">
+                    <div className="stack-list" data-aos="fade-up">
                         <h4>~ tools</h4>
                         <div style={{ marginTop: "0", display: "flex", flexWrap: "wrap" }}>
                             <p>Git</p>
@@ -82,7 +82,7 @@ function Stack() {
 
                 </div>
 
-                <div className="resume-div" style={{
+                <div data-aos="fade-up" className="resume-div" style={{
                     margin: "0px auto",
                     display: "flex",
                     alignItems: "center",

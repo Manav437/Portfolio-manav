@@ -5,7 +5,6 @@ body {
     margin: 0;
 }
 
-
 @keyframes gradientMotion {
     0% {
       background-position: 0% 50%;
