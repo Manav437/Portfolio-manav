@@ -83,7 +83,7 @@ function Home() {
                     </div>
                 </div>
 
-                <p data-aos="zoom-out" className="last-p" style={{ color: "black", background: "#A0C878", padding: "5px 2px", margin: "0 auto", display: "inline-block", textAlign: "center" }}>@terminal by <span className='footer-span' style={{ textDecoration: "underline", textUnderlineOffset: "3px" }}>manav</span></p>
+                <p data-aos="zoom-out" data-aos-anchor-placement="top-bottom" className="last-p" style={{ color: "black", background: "#A0C878", padding: "5px 2px", margin: "0 auto", display: "inline-block", textAlign: "center" }}>@terminal by <span className='footer-span' style={{ textDecoration: "underline", textUnderlineOffset: "3px" }}>manav</span></p>
             </div>
         </div >
     )

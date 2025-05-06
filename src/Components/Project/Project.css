@@ -25,6 +25,7 @@ body {
 }
 
 .project-card {
+    background-color: #6F826A;
     border: 2px inset #cbd3c3;
     border: 2px outset #c0e19f;
     border-radius: 10px;
@@ -32,17 +33,24 @@ body {
     padding-bottom: 15px;
 }
 
+.project-card:hover {
+    background: #2f3b30;
+}
+
 .card-head {
     color: #A0C878;
     margin-top: 0px;
     margin-bottom: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
 .project-card span {
     background-color: #67AE6E;
     color: #18230F;
     margin-right: 7px;
-    border: 1px solid #A0C878;
+    border: 1px solid white;
     border-radius: 5px;
     padding: 3px 2px;
     font-size: .85rem;
@@ -52,22 +60,27 @@ body {
     cursor: cell;
 }
 
-.project-card p {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-
-}
-
 .project-card img {
     height: 25px;
     border-radius: 50%;
     /* padding-left: 1px; */
     border: 1px solid #A0C878;
+    transition: .3s ease-in-out;
 }
 
 .project-card img:hover {
     cursor: pointer;
+    transform: scale(1.2);
+}
+
+.github {
+    height: 20px;
+    fill: black;
+}
+
+.github:hover {
+    background: black;
+    transform: scale(1.2);
 }
 
 @media (max-width :790px) {

@@ -13,7 +13,7 @@ function Stack() {
 
     return (
         <div className="stack-container" >
-            <div className="stack-content" style={{ gap: "30px", display: "flex", flexDirection: "column", height: "100%" }}>
+            <div className="stack-content" style={{ gap: "30px", display: "flex", flexDirection: "column" }}>
                 <div className='navbar'>
                     <Link style={{ display: "flex", alignItems: "center" }} to="/"><img
                         style={{ border: '1px solid #fff', borderRadius: "5px" }}
@@ -82,7 +82,7 @@ function Stack() {
 
                 </div>
 
-                <div data-aos="fade-up" className="resume-div" style={{
+                <div data-aos="fade-up" data-aos-anchor-placement="top-bottom" className="resume-div" style={{
                     margin: "0px auto",
                     display: "flex",
                     alignItems: "center",
