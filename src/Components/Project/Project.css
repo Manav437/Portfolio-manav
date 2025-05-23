@@ -12,11 +12,21 @@ body {
     justify-content: center;
     align-items: center;
     width: 100vw;
+    overflow: visible;
 }
 
 
 .project-content {
     width: 50%;
+    overflow: visible;
+}
+
+.project-info {
+    margin: 0 auto;
+}
+
+.project-info h3 {
+    width: 98%;
 }
 
 .project-info h3:hover {
@@ -25,25 +35,33 @@ body {
 }
 
 .project-card {
+    width: 95%;
     background-color: #6F826A;
     border: 2px inset #cbd3c3;
-    border: 2px outset #c0e19f;
+    border: 2px outset #9fed56;
     border-radius: 10px;
     padding: 10px;
     padding-bottom: 15px;
+    transition: .3s ease-in-out;
+    transform-origin: center center;
 }
 
 .project-card:hover {
-    background: #2f3b30;
+    background: #4f6a50;
+    transform: scale(1.01);
 }
 
 .card-head {
-    color: #A0C878;
+    color: #def1e0;
     margin-top: 0px;
     margin-bottom: 0px;
     display: flex;
     align-items: center;
     justify-content: space-between;
+    /* text-decoration: underline; */
+    /* text-decoration-color: white; */
+    /* text-underline-offset: 5px; */
+    border-bottom: 1px solid white;
 }
 
 .project-card span {
@@ -52,9 +70,14 @@ body {
     margin-right: 7px;
     border: 1px solid white;
     border-radius: 5px;
-    padding: 3px 2px;
+    padding: 5px 3px;
     font-size: .85rem;
 }
+
+/* .project-text {
+    padding-bottom: px;
+    border-bottom: 1px solid white;
+} */
 
 .project-card span:hover {
     cursor: cell;
@@ -64,16 +87,17 @@ body {
     height: 25px;
     border-radius: 50%;
     /* padding-left: 1px; */
-    border: 1px solid #A0C878;
+    /* border: 1px solid white; */
     transition: .3s ease-in-out;
 }
 
 .project-card img:hover {
     cursor: pointer;
     transform: scale(1.2);
+    /* border: .5px solid white; */
 }
 
-.github {
+.githubb {
     height: 20px;
     fill: black;
 }

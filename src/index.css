@@ -1,8 +1,27 @@
-body {
-    background: linear-gradient(-45deg, #0f0f0f, #1a1a1a, #2c2c54, #3b3b98);
+:root {
+  --bg-dark:linear-gradient(-45deg, #0f0f0f, #1a1a1a, #2c2c54, #3b3b98);
+  --bg-light:linear-gradient(-45deg, #aaa3a3, #b5a2a2, #7575b1, #acacf4);
+  --text-light: black;
+  --text-dark: white;
+  /* transition: 0.3s ease-in-out; */
+}
+
+body.dark {
+    background: var(--bg-dark);
     background-size: 400% 400%;
     animation: gradientMotion 20s ease infinite;
-    margin: 0;
+    /* margin: 0; */
+    --nav-link-color: var(--text-dark);
+}
+
+body {
+  margin: 0;
+  color: black;
+  background-size: 400% 400%;
+  animation: gradientMotion 20s ease infinite;
+  background:var(--bg-light);
+  --nav-link-color: var(--text-light);
+  transition: background 0.3s ease-in-out, color 0.2s ease-in-out;
 }
 
 @keyframes gradientMotion {
@@ -15,4 +34,9 @@ body {
     100% {
       background-position: 0% 50%;
     }
-  }
+}
+
+body.dark.no-transition,
+body.no-transition {
+  transition: none !important;
+}

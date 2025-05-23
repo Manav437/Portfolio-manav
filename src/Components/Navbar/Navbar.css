@@ -1,0 +1,144 @@
+
+.navbar {
+  width: 100%;
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  /* flex-wrap: wrap; */
+}
+
+.active {
+  background: #A0C878;
+}
+
+.nav-link {
+  text-decoration: none;
+  color: var(--nav-link-color);
+  padding: 5px 2px;
+  transition: background-color 0.3s ease;
+}
+
+.nav-link:hover {
+  background-color: #A0C878;
+}
+
+.navbar img {
+  width: 30px;
+  height: 30px;
+}
+
+.navbar .menu-toggle {
+  display: none;
+  font-size: 24px;
+  background: none;
+  border: none;
+  color: var(--nav-link-color, #fff);
+  cursor: pointer;
+}
+
+.nav-links {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.right-section {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  flex-wrap: nowrap; /* Prevent wrapping */
+  overflow: hidden;
+}
+
+.time-info {
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+  text-decoration: underline;
+  text-underline-offset: 7px;
+}
+
+@media (max-width: 768px) {
+  .navbar, body {
+    width: 100%;
+    margin: 20px 0;
+  }
+
+  body {
+    min-height: 120vh;
+  }
+
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    margin-top: 10px;
+  }
+
+  .nav-links.open {
+    display: flex;
+    /* background-color: black; */
+  }
+
+  .navbar .menu-toggle {
+    display: block;
+  }
+
+  .right-section {
+    width: 100%;
+    justify-content: flex-end;
+    margin-top: 10px;
+    flex-wrap: nowrap; /* still prevent wrapping */
+  }
+
+  .time-info {
+    line-height: 3rem;
+    justify-content: flex-end;
+  }
+}
+
+body.dark.no-transition,
+body.no-transition {
+  transition: none !important;
+}
+
+.dark-mode-toggle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  cursor: pointer;
+}
+
+.dark-mode-toggle > img {
+  border-radius: 50%;
+  padding: 1px;
+  transition: 0.3s ease-in-out;
+}
+
+.dark-mode-toggle > img:hover {
+  transform: scale(1.1);
+}
+
+.custom-tooltip {
+  position: absolute;
+  bottom: -70%;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #333;
+  color: #fff;
+  padding: 3px 5px;
+  font-size: 12px;
+  border-radius: 5px;
+  white-space: nowrap;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.2s ease-in-out 0.2s;
+  z-index: 100;
+}
+
+.dark-mode-toggle:hover .custom-tooltip {
+  opacity: 1;
+}

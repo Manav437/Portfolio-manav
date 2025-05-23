@@ -1,93 +1,59 @@
-import { useEffect } from "react";
-import { NavLink, Link } from "react-router-dom";
+import { useEffect, useState } from "react";
+import Navbar from "../Navbar/Navbar";
 import AOS from 'aos';
 import 'aos/dist/aos.css';
-import "./Home.css"
+import "./Home.css";
+
 
 function Home() {
-
     useEffect(() => {
-        AOS.init({ duration: 1000 }); // Optional: customize options
-    }, []);
+        AOS.init({ duration: 1000 });
+    }, [])
 
     return (
         <div className='app-container'>
-            <div className='app-content' style={{ gap: "30px", display: "flex", flexDirection: "column", height: "100%" }} >
-                <div className='navbar'>
-                    <Link style={{ display: "flex", alignItems: "center" }} to="/"><img
-                        style={{ border: '1px solid #fff', borderRadius: "5px" }}
-                        src='/navbar-icon.png'
-                        alt='Navbar Icon'
-                    /></Link>
+            <div className='app-content' style={{ gap: "30px", display: "flex", flexDirection: "column", height: "100%" }}>
+                <Navbar />
 
-                    <NavLink
-                        to='/'
-                        className={({ isActive }) =>
-                            isActive ? 'nav-link active' : 'nav-link'
-                        }
-                    >
-                        ~/home
-                    </NavLink>
-                    <NavLink
-                        to='/stack'
-                        className={({ isActive }) =>
-                            isActive ? 'nav-link active' : 'nav-link'
-                        }
-                    >
-                        ./stacks
-                    </NavLink>
-                    <NavLink
-                        to='/project'
-                        className={({ isActive }) =>
-                            isActive ? 'nav-link active' : 'nav-link'
-                        }
-                    >
-                        ./projects
-                    </NavLink>
-                </div>
-
-                <div className='info' data-aos="zoom-out" >
+                <div className='info' data-aos="zoom-out">
                     <h3 style={{ borderBottom: "1px solid white" }}>~ info</h3>
-
                     <div className='info-content'>
                         <div className="img-container" style={{ position: "relative", display: "flex", flexDirection: "column" }} data-aos="fade-right">
                             <img src="/portfolio-img.jpeg" alt="" />
-                            <p style={{ color: "white", width: "30px", paddingLeft: "10px", position: "absolute", textAlign: "center", fontSize: "8px" }}>hover</p>
+                            <p style={{ width: "30px", paddingLeft: "10px", position: "absolute", textAlign: "center", fontSize: "8px" }}>hover</p>
                         </div>
-
                         <div className='info-text'>
-                            <p>Hi, I am <span>Manav</span>. <a className="leet-code" target="_blank" href="https://en.wikipedia.org/wiki/Human">{'${wk}'}</a></p>
-                            <p>Full Stack Developer</p>
-                            <p>DSA && Leetcode <a className='leet-code' target="_blank" href="https://leetcode.com/u/Manav437/">{'${lt}'}</a></p>
+                            <p style={{ fontSize: ".9rem", marginTop: "0", lineHeight: "1.5" }}>
+                                Hi, I'm <span>Manav</span>, a full-stack developer with a passion for
+                                building user-friendly <span>web applications</span>. I specialize in full-stack development, with
+                                expertise in technologies such as React.js, Node.js, and MongoDB.
+                                I'm constantly learning and adapting to the latest industry trends
+                                to ensure that my work is innovative and impactful.
+                            </p>
                         </div>
                     </div>
                 </div>
 
                 <div className='about' data-aos="zoom-out">
                     <h3 style={{ borderBottom: "1px solid white" }}>~ about</h3>
-
                     <ul className='custom' style={{ lineHeight: "1.5rem" }}>
-                        <li>pre-final year student</li>
-                        <li>open for frontend ||  backend opportunites</li>
-                        {/* <li></li> */}
+                        <li style={{ fontSize: ".9rem" }}>
+                            I am a pre-final year student seeking opportunities to grow as a frontend or backend developer. I am particularly interested in working with modern web technologies and contributing to building real-world applications. Whether it’s crafting dynamic user interfaces or optimizing server-side performance, I’m excited to bring my skills to new challenges.
+                        </li>
                     </ul>
                 </div>
 
                 <div className='socials' data-aos="zoom-out">
                     <h3 style={{ borderBottom: "1px solid white" }}>~ social_links</h3>
-
                     <div className='socials-content'>
-                        <a target='_blank' href="https://github.com/Manav437">Github</a>
-                        <a target='_blank' href="https://x.com/Manav437">Twitter</a>
-                        <a target='_blank' href="https://www.linkedin.com/in/manav-gusain/">LinkedIn</a>
+                        <a target='_blank' href="https://github.com/Manav437"><img className="github" src="/github.svg" alt="" />Github <img className="arrow" src="/arrow.png" alt="" /></a>
+                        <a target='_blank' href="https://x.com/Manav437"><img className="github" src="/twitter.svg" alt="" />Twitter<img className="arrow" src="/arrow.png" alt="" /></a>
+                        <a target='_blank' href="https://www.linkedin.com/in/manav-gusain/"><img className="github" src="/linkedin-img.png" alt="" />LinkedIn<img className="arrow" src="/arrow.png" alt="" /></a>
                     </div>
                 </div>
-
-                <p data-aos="zoom-out" data-aos-anchor-placement="top-bottom" className="last-p" style={{ color: "black", background: "#A0C878", padding: "5px 2px", margin: "0 auto", display: "inline-block", textAlign: "center" }}>@terminal by <span className='footer-span' style={{ textDecoration: "underline", textUnderlineOffset: "3px" }}>manav</span></p>
             </div>
-        </div >
-    )
+        </div>
+    );
 }
-
 
 export default Home;

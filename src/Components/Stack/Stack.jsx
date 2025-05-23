@@ -1,8 +1,10 @@
-import { useEffect } from "react";
-import { NavLink, Link } from "react-router-dom";
+import { useEffect, useState } from "react";
+import Navbar from "../Navbar/Navbar"
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import "./Stack.css"
+
+
 
 function Stack() {
 
@@ -10,42 +12,10 @@ function Stack() {
         AOS.init({ duration: 1000 }); // Optional: customize options
     }, []);
 
-
     return (
         <div className="stack-container" >
             <div className="stack-content" style={{ gap: "30px", display: "flex", flexDirection: "column" }}>
-                <div className='navbar'>
-                    <Link style={{ display: "flex", alignItems: "center" }} to="/"><img
-                        style={{ border: '1px solid #fff', borderRadius: "5px" }}
-                        src='/navbar-icon.png'
-                        alt='Navbar Icon'
-                    /></Link>
-
-                    <NavLink
-                        to='/'
-                        className={({ isActive }) =>
-                            isActive ? 'nav-link active' : 'nav-link'
-                        }
-                    >
-                        ~/home
-                    </NavLink>
-                    <NavLink
-                        to='/stack'
-                        className={({ isActive }) =>
-                            isActive ? 'nav-link active' : 'nav-link'
-                        }
-                    >
-                        ./stacks
-                    </NavLink>
-                    <NavLink
-                        to='/project'
-                        className={({ isActive }) =>
-                            isActive ? 'nav-link active' : 'nav-link'
-                        }
-                    >
-                        ./projects
-                    </NavLink>
-                </div>
+                <Navbar />
 
                 <div className="stack-info" >
                     <h3 className="stack-head" style={{ borderBottom: "1px solid white" }}>tech_stack</h3>
@@ -72,7 +42,7 @@ function Stack() {
 
                     <div className="stack-list" data-aos="fade-up">
                         <h4>~ tools</h4>
-                        <div style={{ marginTop: "0", display: "flex", flexWrap: "wrap" }}>
+                        <div style={{ marginTop: "0", display: "flex", flexWrap: "wrap", paddingBottom: "20px" }}>
                             <p>Git</p>
                             <p>Github</p>
                             <p>Render</p>
