@@ -10,7 +10,7 @@ body.dark {
     background: var(--bg-dark);
     background-size: 400% 400%;
     animation: gradientMotion 20s ease infinite;
-    /* margin: 0; */
+    transition: background 0.3s ease-in-out, color 0.2s ease-in-out;
     --nav-link-color: var(--text-dark);
 }
 

@@ -9,15 +9,17 @@ body {
 .stack-container {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    /* justify-content: center; */
     align-items: center;
     width: 100vw;
-    height: 100vh;
+    height: 105vh;
 }
 
 .stack-content {
-    height: 100vh;
     width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
 }
 
 .stack-head {
@@ -46,22 +48,27 @@ body {
 }
 
 .stack-list > div {
-    gap: 7px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
 }
 
 .stack-list > div > p {
     background: #2C2C2C;
     color: white;
-    padding: 5px;
-    width: 30%;
-    border: 2px inset #cbd3c3;
+    padding: 6px 10px;
     border: 2px outset #a3c185;
     border-radius: 5px;
+    font-size: 0.85rem;
+    flex: 1 1 30%; /* Responsive width */
+    text-align: center;
+    min-width: 90px;
 }
 
 .resume-div {
     height: fit-content;
     background-color: #1f1f1f;
+    transition: background-color 0.3s ease;
 }
 
 .resume-div:hover {
@@ -70,7 +77,8 @@ body {
 
 @media (max-width :790px) {
     .stack-content {
-        width:90%
+        width: 90%;
+        padding-bottom: 20px;
     }
 
     .nav-link {
@@ -83,6 +91,25 @@ body {
     }
 
     .stack-list > div > p {
-        width: 28%;
+        flex: 1 1 45%; /* stack 2 items per row */
+        font-size: 0.8rem;
+        padding: 5px 8px;
     }
+
+    .resume-div a {
+        font-size: 12px !important;
+    } 
+    .stack-head {
+        font-size: 1.1rem;
+    }
+}
+
+@media (max-width: 500px) {
+  .stack-list > div > p {
+    flex: 1 1 100%; /* stack one per row on very small screens */
+  }
+
+  .stack-list > div > p.nextjs {
+    flex: 1 1 100%;  /* Take full width on small screens */
+  }
 }

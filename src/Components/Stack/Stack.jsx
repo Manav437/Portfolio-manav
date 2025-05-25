@@ -9,27 +9,27 @@ import "./Stack.css"
 function Stack() {
 
     useEffect(() => {
-        AOS.init({ duration: 1000 }); // Optional: customize options
+        AOS.init({ duration: 1000, once: true }); // Optional: customize options
     }, []);
 
     return (
         <div className="stack-container" >
             <div className="stack-content" style={{ gap: "30px", display: "flex", flexDirection: "column" }}>
                 <Navbar />
+                <h3 className="stack-head" style={{ borderBottom: "1px solid white" }}>tech_stack</h3>
 
                 <div className="stack-info" >
-                    <h3 className="stack-head" style={{ borderBottom: "1px solid white" }}>tech_stack</h3>
 
-                    <div className="stack-list" data-aos="fade-up">
+                    <div className="stack-list">
                         <h4>~ frontend</h4>
                         <div style={{ marginTop: "0", display: "flex" }}>
                             <p>React</p>
                             <p>Tailwind</p>
-                            <p>Next.js</p>
+                            <p className="nextjs">Next.js</p>
                         </div>
                     </div>
 
-                    <div className="stack-list" data-aos="fade-up">
+                    <div className="stack-list">
                         <h4>~ backend</h4>
                         <div style={{ marginTop: "0", display: "flex", flexDirection: "row", flexWrap: "wrap" }}>
                             <p >Node.js</p>
@@ -40,7 +40,7 @@ function Stack() {
                         </div>
                     </div>
 
-                    <div className="stack-list" data-aos="fade-up">
+                    <div className="stack-list">
                         <h4>~ tools</h4>
                         <div style={{ marginTop: "0", display: "flex", flexWrap: "wrap", paddingBottom: "20px" }}>
                             <p>Git</p>
@@ -52,7 +52,7 @@ function Stack() {
 
                 </div>
 
-                <div data-aos="fade-up" data-aos-anchor-placement="top-bottom" className="resume-div" style={{
+                <div className="resume-div" style={{
                     margin: "0px auto",
                     display: "flex",
                     alignItems: "center",
@@ -73,7 +73,7 @@ function Stack() {
                         fontWeight: "500",
                         fontSize: "14px"
                     }}>
-                        <span>View resume</span>
+                        <span>View Resume</span>
                         <img
                             src="/upload-img.png"
                             alt="Upload Icon"

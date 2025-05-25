@@ -54,6 +54,7 @@ body.light {
 }
 
 .img-container p {
+    color: white;
     transition: opacity 0.3s ease;
 }
       
@@ -125,18 +126,23 @@ ul.custom li::before {
 
 .socials-content {
     display: flex;
+    flex-wrap: wrap;        /* Wrap items on smaller screens */
     gap: 10px;
     text-align: center;
+    justify-content: flex-start;
 }
 
 .socials-content a {
     display: flex;
     align-items: center;
-    justify-content: center;
     gap: 5px;
     text-decoration: none;
     color: white;
-    padding: 5px 3px;
+    padding: 5px 8px;
+    background-color: rgba(255, 255, 255, 0.05);
+    border-radius: 6px;
+    font-size: 0.85rem;
+    transition: background-color 0.3s ease;
 }
 
 .socials-content a:hover {
@@ -159,11 +165,6 @@ ul.custom li::before {
     border-radius: 5px;
 }
 
-/* .footer-span:hover {
-    background-color: #2C2C2C;
-    color: white;
-    cursor: none;
-} */
 
 .last-p {
     width: 25%;
@@ -190,6 +191,11 @@ ul.custom li::before {
 
 @media (max-width :790px) {
     .app-content {
+        width: 100%;
+        min-height: 132vh;
+    }
+
+    .app-content {
         width: 90%;
     }
     
@@ -208,5 +214,23 @@ ul.custom li::before {
 
     h3 {
         font-size: 20px;
+    }
+
+    .socials-content {
+        justify-content: center;
+        gap: 12px;
+    }
+
+    .socials-content a {
+        flex: 1 1 45%;  /* two items per row roughly */
+        justify-content: center;
+    }
+
+    .socials-content a > img {
+        height: 14px;
+    }
+
+    .socials h3 {
+        font-size: 18px;
     }
 }

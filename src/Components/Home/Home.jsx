@@ -7,7 +7,7 @@ import "./Home.css";
 
 function Home() {
     useEffect(() => {
-        AOS.init({ duration: 1000 });
+        AOS.init({ duration: 1000, once: true });
     }, [])
 
     return (
@@ -44,11 +44,12 @@ function Home() {
                 </div>
 
                 <div className='socials' data-aos="zoom-out">
-                    <h3 style={{ borderBottom: "1px solid white" }}>~ social_links</h3>
+                    <h3 style={{ borderBottom: "1px solid white" }}>~ socials</h3>
                     <div className='socials-content'>
                         <a target='_blank' href="https://github.com/Manav437"><img className="github" src="/github.svg" alt="" />Github <img className="arrow" src="/arrow.png" alt="" /></a>
                         <a target='_blank' href="https://x.com/Manav437"><img className="github" src="/twitter.svg" alt="" />Twitter<img className="arrow" src="/arrow.png" alt="" /></a>
                         <a target='_blank' href="https://www.linkedin.com/in/manav-gusain/"><img className="github" src="/linkedin-img.png" alt="" />LinkedIn<img className="arrow" src="/arrow.png" alt="" /></a>
+                        <a target='_blank' href="https://leetcode.com/u/Manav437/"><img className="github" src="/leetcode-img.png" alt="" />LeetCode<img className="arrow" src="/arrow.png" alt="" /></a>
                     </div>
                 </div>
             </div>
