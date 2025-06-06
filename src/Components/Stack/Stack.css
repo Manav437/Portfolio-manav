@@ -9,17 +9,16 @@ body {
 .stack-container {
     display: flex;
     flex-direction: column;
-    /* justify-content: center; */
     align-items: center;
     width: 100vw;
-    height: 105vh;
+    min-height: 100vh;
 }
 
 .stack-content {
     width: 50%;
     display: flex;
     flex-direction: column;
-    gap: 30px;
+    /* gap: 20px; */
 }
 
 .stack-head {
@@ -27,9 +26,10 @@ body {
 }
 
 .stack-head:hover {
-    cursor: crosshair;
+    /* cursor: crosshair; */
     background: #A0C878;
 }
+
 
 .stack-info p {
     margin-top: 0;
@@ -39,6 +39,7 @@ body {
     color: #A0C878;
     width: fit-content;
     padding: 5px 2px;
+    margin-bottom: 10px;
     /* border-bottom: 2px solid #fff; */
 }
 
@@ -56,13 +57,13 @@ body {
 .stack-list > div > p {
     background: #2C2C2C;
     color: white;
-    padding: 6px 10px;
-    border: 2px outset #a3c185;
-    border-radius: 5px;
+    padding: 10px 0;
+    margin: 5px 0;
+    border-radius: 10px;
+    border: 1.4px solid #e7efc7;
     font-size: 0.85rem;
-    flex: 1 1 30%; /* Responsive width */
+    flex: 0 1 31%; /* Responsive width */
     text-align: center;
-    min-width: 90px;
 }
 
 .resume-div {
@@ -105,11 +106,16 @@ body {
 }
 
 @media (max-width: 500px) {
-  .stack-list > div > p {
-    flex: 1 1 100%; /* stack one per row on very small screens */
-  }
+    .stack-container {
+        height: 110vh;
+    }
 
-  .stack-list > div > p.nextjs {
-    flex: 1 1 100%;  /* Take full width on small screens */
-  }
+    .stack-list > div > p {
+        padding: 7px 0;
+        flex: 1 1 100%; /* stack one per row on very small screens */
+    }
+
+    .stack-list > div > p.nextjs {
+        flex: 1 1 100%;  /* Take full width on small screens */
+    }
 }

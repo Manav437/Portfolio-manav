@@ -20,7 +20,7 @@ function Project() {
 							with like-minded learners.</p>
 
 						<div style={{ display: "flex", alignItems: "center", justifyContent: "space-between" }}>
-							<div>
+							<div className='tech'>
 								<span>React</span><span>Firebase</span>
 							</div>
 							<div style={{ display: "flex", alignItems: "center" }}>
@@ -36,7 +36,7 @@ function Project() {
 							error handling for a smooth user experience.</p>
 
 						<div style={{ display: "flex", alignItems: "center", justifyContent: "space-between" }}>
-							<div>
+							<div className='tech'>
 								<span>React</span><span>Gemini API</span>
 							</div>
 							<div style={{ display: "flex", alignItems: "center" }}>
@@ -53,7 +53,7 @@ function Project() {
 							image uploads for a personalised experience. Use of JWT, brcyptjs, multer in backend.</p>
 
 						<div style={{ display: "flex", alignItems: "center", justifyContent: "space-between" }}>
-							<div>
+							<div className='tech'>
 								<span>MongoDB</span><span>Express</span><span>React</span><span>Nodejs</span>
 							</div>
 							<div style={{ display: "flex", alignItems: "center" }}>
@@ -68,7 +68,7 @@ function Project() {
 							live user lists, location sharing, and a clean frontend UI. Messages aren’t
 							stored, ensuring temporary and private chats.</p>
 						<div style={{ display: "flex", alignItems: "center", justifyContent: "space-between" }}>
-							<div>
+							<div className='tech'>
 								<span>Nodejs</span><span>Express</span><span>Socket.io</span>
 							</div>
 							<div style={{ display: "flex", alignItems: "center" }}>
@@ -83,7 +83,7 @@ function Project() {
 							API based on user input, featuring a clean, responsive UI and efficient
 							backend handling.</p>
 						<div style={{ display: "flex", alignItems: "center", justifyContent: "space-between" }}>
-							<div>
+							<div className='tech'>
 								<span>Nodejs</span><span>Express</span><span>APIs</span>
 							</div>
 							<div style={{ display: "flex", alignItems: "center" }}>

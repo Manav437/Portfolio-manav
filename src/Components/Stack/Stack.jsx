@@ -5,7 +5,6 @@ import 'aos/dist/aos.css';
 import "./Stack.css"
 
 
-
 function Stack() {
 
     useEffect(() => {
@@ -14,9 +13,9 @@ function Stack() {
 
     return (
         <div className="stack-container" >
-            <div className="stack-content" style={{ gap: "30px", display: "flex", flexDirection: "column" }}>
+            <div className="stack-content" style={{ display: "flex", flexDirection: "column" }}>
                 <Navbar />
-                <h3 className="stack-head" style={{ borderBottom: "1px solid white" }}>tech_stack</h3>
+                <h3 className="stack-head" style={{ marginTop: "48px", borderBottom: "1px solid white" }}>tech_stack</h3>
 
                 <div className="stack-info" >
 

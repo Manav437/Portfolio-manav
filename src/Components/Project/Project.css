@@ -36,8 +36,8 @@ body {
 .project-card {
     width: 95%;
     background-color: #6F826A;
-    border: 2px inset #cbd3c3;
-    border: 2px outset #9fed56;
+    /* border: 2px inset #cbd3c3;
+    border: 2px outset #9fed56; */
     border-radius: 10px;
     padding: 10px;
     padding-bottom: 15px;
@@ -64,10 +64,14 @@ body {
     background-color: #67AE6E;
     color: #18230F;
     margin-right: 7px;
-    border: 1px solid white;
+    border: .9px solid white;
     border-radius: 5px;
-    padding: 5px 3px;
-    font-size: .85rem;
+    padding: 5px;
+}
+
+.tech span {
+    font-size: .8rem;
+    font-weight: 500;
 }
 
 /* .project-text {
@@ -112,8 +116,7 @@ body {
     .project-card {
         width: 100%;
         padding: 8px;
-        border: 2px solid #67AE6E;
-
+        /* border: 2px solid #67AE6E; */
     }
 
     .nav-link {

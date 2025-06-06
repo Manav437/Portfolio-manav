@@ -3,7 +3,6 @@
   --bg-light:linear-gradient(-45deg, #aaa3a3, #b5a2a2, #7575b1, #acacf4);
   --text-light: black;
   --text-dark: white;
-  /* transition: 0.3s ease-in-out; */
 }
 
 body.dark {

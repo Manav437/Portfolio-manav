@@ -12,21 +12,20 @@ function Home() {
 
     return (
         <div className='app-container'>
-            <div className='app-content' style={{ gap: "30px", display: "flex", flexDirection: "column", height: "100%" }}>
+            <div className='app-content' style={{ gap: "30px", display: "flex", flexDirection: "column" }}>
                 <Navbar />
 
                 <div className='info' data-aos="zoom-out">
                     <h3 style={{ borderBottom: "1px solid white" }}>~ info</h3>
                     <div className='info-content'>
                         <div className="img-container" style={{ position: "relative", display: "flex", flexDirection: "column" }} data-aos="fade-right">
-                            <img src="/portfolio-img.jpeg" alt="" />
-                            <p style={{ width: "30px", paddingLeft: "10px", position: "absolute", textAlign: "center", fontSize: "8px" }}>hover</p>
+                            <img src="/manav.jpeg" alt="" />
+                            <p style={{ width: "30px", paddingLeft: "6px", position: "absolute", textAlign: "center", fontSize: "7px" }}>hover</p>
                         </div>
                         <div className='info-text'>
-                            <p style={{ fontSize: ".9rem", marginTop: "0", lineHeight: "1.5" }}>
+                            <p style={{ marginTop: "0", lineHeight: "1.5" }}>
                                 Hi, I'm <span>Manav</span>, a full-stack developer with a passion for
-                                building user-friendly <span>web applications</span>. I specialize in full-stack development, with
-                                expertise in technologies such as React.js, Node.js, and MongoDB.
+                                building user-friendly <span>web applications</span>. I specialize in MERN stack development.
                                 I'm constantly learning and adapting to the latest industry trends
                                 to ensure that my work is innovative and impactful.
                             </p>
@@ -37,8 +36,12 @@ function Home() {
                 <div className='about' data-aos="zoom-out">
                     <h3 style={{ borderBottom: "1px solid white" }}>~ about</h3>
                     <ul className='custom' style={{ lineHeight: "1.5rem" }}>
-                        <li style={{ fontSize: ".9rem" }}>
-                            I am a pre-final year student seeking opportunities to grow as a frontend or backend developer. I am particularly interested in working with modern web technologies and contributing to building real-world applications. Whether it’s crafting dynamic user interfaces or optimizing server-side performance, I’m excited to bring my skills to new challenges.
+                        <li >
+                            I am a pre-final year student seeking opportunities to grow as
+                            a frontend or backend developer. I am particularly interested in
+                            working with modern web technologies and contributing to building
+                            real-world applications. Whether it’s crafting dynamic user interfaces
+                            or optimizing server-side performance, I’m excited to bring my skills to new challenges.
                         </li>
                     </ul>
                 </div>
