@@ -11,3 +11,9 @@
     transition: transform 0.1s ease;
   }
   
+
+@media (max-width: 768px) { 
+  .circle {
+    opacity: 0;
+  }
+}

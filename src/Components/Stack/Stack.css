@@ -106,8 +106,10 @@ body {
 }
 
 @media (max-width: 500px) {
-    .stack-container {
-        height: 110vh;
+    .stack-content {
+        /* height: 110vh; */
+        width: 95vw;
+        margin-bottom: 50px;
     }
 
     .stack-list > div > p {

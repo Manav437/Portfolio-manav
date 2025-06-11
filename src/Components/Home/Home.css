@@ -195,13 +195,16 @@ ul.custom li::before {
 }
 
 @media (max-width :790px) {
-    .app-content {
-        width: 100%;
-        height: 125vh;
+    body {
+        width: 100vw;
     }
 
+    .app-container {
+        margin-bottom: 50px;
+    }
+    
     .app-content {
-        width: 90%;
+        width: 95%;
     }
     
     .navbar {

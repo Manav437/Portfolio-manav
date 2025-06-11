@@ -89,7 +89,7 @@ function Navbar() {
                         alt={isDarkMode ? "Light mode" : "Dark mode"}
                     />
                     <span className="custom-tooltip">
-                        {isDarkMode ? "Switch to light theme" : "Switch to dark theme"}
+                        {isDarkMode ? "Switch to light mode" : "Switch to dark mode"}
                     </span>
                 </div>
 

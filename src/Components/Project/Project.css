@@ -109,8 +109,9 @@ body {
 
 @media (max-width :790px) {
     .project-content {
-        width:90%;
-        min-height: auto;
+        width:95%;
+        /* min-height: auto; */
+        margin-bottom: 40px;
     }
 
     .project-card {

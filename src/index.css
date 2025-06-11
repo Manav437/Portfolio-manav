@@ -1,6 +1,6 @@
 :root {
   --bg-dark:linear-gradient(-45deg, #0f0f0f, #1a1a1a, #2c2c54, #3b3b98);
-  --bg-light:linear-gradient(-45deg, #aaa3a3, #b5a2a2, #7575b1, #acacf4);
+  --bg-light:linear-gradient(-45deg, #bbb6b6, #c9b2b2, #8b8bbe, #c1c1f6);
   --text-light: black;
   --text-dark: white;
 }
